@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            height: 97.5vh;
+            background-image: linear-gradient(rgb(255, 196, 196), rgb(248, 50, 248));
+            
+        }
+        main{
+            background-color: aliceblue;
+            height: 400px;
+            max-width: 800px;
+            margin:auto;
+            border-radius: 10px;
+            text-align: center;
+            padding-top:50px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.329);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Aonde você nasceu?</h1>
+        <input type="text" name="txtNac" id="txtNac">
+        <input type="button" value="Resultado" onclick="nacionalidade()">
+        <div id="res">
+        </div>
+    </main>
+<script>
+    function nacionalidade() {
+        var txtN = document.getElementById('txtNac')
+        var res = document.querySelector('div#res') 
+        var nac = txtN.value
+        
+        switch (nac){
+            case 'Brasil':
+                res.innerHTML =  `<p>Parabens! Você é <strong>brasileiro</strong>! </p>`
+                document.body.style.background = 'rgb(0, 156, 55)'
+                break
+            case 'Estados Unidos':
+                res.innerHTML =  `<p>Parabens! Você é <strong>Estadunidense</strong>! </p>`
+                document.body.style.background = '#133A8B'
+                break
+            case 'Afeganistão':
+                res.innerHTML = '<p>Parabens! Você é <strong>afegão</strong>! </p>'
+                document.body.style.background = '#BE0000'
+                break
+            case 'Angola':
+                res.innerHTML = '<p>Parabens! Você é <strong>angolano</strong>! </p>'
+                document.body.style.background = '#ED0E00'
+                break
+            case 'Argentina': 
+                res.innerHTML = '<p>Parabens! Você é <strong>argentino</strong>! </p>'
+                document.body.style.background = '#93DAFC'
+                break
+            case 'Australia':
+                res.innerHTML = '<p>Parabens! Você é <strong>australiano</strong>! </p>'
+                document.body.style.background = '#01008A'
+                break
+            case 'Austria':
+                res.innerHTML = '<p>Parabens! Você é <strong>austriaco</strong>! </p>'
+                document.body.style.background = '#EC2637'
+                break
+            case 'Belgica':
+                res.innerHTML = '<p>Parabens! Você é <strong>belgo</strong>! </p>'
+                document.body.style.background = '#F9DF44'
+                break
+            default: 
+                res.innerHTML =  '<p>Parabens! Você é <strong>estrangeiro</strong>! </p>'
+                
+        }
+
+
+        /*if (nac == 'brasil' || nac == 'Brasil' || nac == 'BRASIL'){
+            res.innerHTML = `<p>Parabens! Você é <strong>brasileiro</strong>! </p>`
+        }else if (nac == 'afeganistão'){
+            res.innerHTML = '<p>Parabens! Você é <strong>afegão</strong>! </p>'
+        }else if (nac == 'angola'){
+            res.innerHTML = '<p>Parabens! Você é <strong>angolano</strong>! </p>'
+        }else if (nac == 'argentina'){
+            res.innerHTML = '<p>Parabens! Você é <strong>argentino</strong>! </p>'
+        }else if (nac == 'australia'){
+            res.innerHTML = '<p>Parabens! Você é <strong>australiano</strong>! </p>'
+        }else if (nac == 'austria'){
+            res.innerHTML = '<p>Parabens! Você é <strong>austriaco</strong>! </p>'
+        }else if (nac == 'begica'){
+            res.innerHTML = '<p>Parabens! Você é <strong>belga</strong>! </p>'
+        }else {
+            res.innerHTML =  '<p>Parabens! Você é <strong>estrangeiro</strong>! </p>'
+        }
+        */
+
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de ID</h1>
+    </header>
+    <main>
+        <p>
+            Ano de Nascimento: <input type="number" name="nasc" id="nasc">
+            <div id="gen">
+        </p>
+            <p>Sexo:
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
+
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+        </div>
+        <input type="button" value="Verificar" onclick="ver()">
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+        
+    </main>
+    <footer>
+        <a href="https://github.com/LucasNAMenezes" rel="external" target="_blank">
+            <p>&copy;Lumen</p>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

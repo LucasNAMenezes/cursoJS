@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            Número (entre 1 e 100):
+            <input type="number" name="txtN1" id="txtN1">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+        </div>
+        <div>
+            <select name="analis" id="analisNum" size="10">
+            <option>Digite um valor acima</option>
+            </select>
+           
+        </div>
+        <div>
+            <input type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id="fin">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; LuMen</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
